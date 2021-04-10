@@ -1,0 +1,1479 @@
+/*HEADER*/
+/*MAIN*/
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff'),
+        url('../fonts/Gotham-Book.ttf') format('truetype'),
+        url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff'),
+        url('../fonts/Gotham-Bold.ttf') format('truetype'),
+        url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff'),
+        url('../fonts/Gotham-Medium.ttf') format('truetype'),
+        url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, p {
+    margin: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+.burger, #mobileMenu {
+    display: none;
+}
+
+header {
+    height: 116px; /* ВЫСОТА */
+    border-bottom: 1px solid rgba(255, 255,255, 0.38); /*Низ лини. Толщина тип цвет*/
+    position: fixed;/*фиксация относительно экрана*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+header > div {
+    display: flex;
+    align-items: center;/*Только для флекса, центрует*/
+}
+
+.logo-link {
+    margin: 0 243px 0 14px;
+}
+
+.logo {
+    width: 79px;
+    height: 75px;
+    background-image: url("../img/Logo.png");
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 660px;
+    justify-content: space-between; /*Пробелы между*/
+}
+
+li {
+    display: block;
+    color: #ffffff;
+    font-family: 'Myriad Pro',sans-serif;
+    font-size: 19px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 54px;
+    width: 141px;
+    justify-content: space-between;
+}
+
+.social div, .logo {
+    display: inline-block;
+    vertical-align: top; /*выравнивает по вертикале от радителя*/
+}
+
+.fb {
+    background-image: url("../img/fb.png");
+    width: 10px;
+    height: 20px;
+}
+
+.twit {
+    background-image: url("../img/twit.png");
+    width: 18px;
+    height: 15px;
+}
+
+.sk {
+    background-image: url("../img/sk.png");
+    width: 18px;
+    height: 18px;
+}
+
+.in {
+    background-image: url("../img/in.png");
+    width: 18px;
+    height: 17px;
+}
+
+/*MAIN*/
+
+.intro {
+    height: 100vh;
+    background-image: url("../img/bg-intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-top: calc((100vh - 50px) / 2);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gotham';
+    color: #f5f5f5;
+    font-size: 144px;/*Размер текста*/
+    text-transform: uppercase;/*Текст Капс*/
+    font-weight: 700;
+    line-height: 75%;/*Высота строки*/
+    margin-bottom: 38px;
+}
+
+.Power-com {
+    font-weight: 500;/*Толщина шрифта*/
+    text-align: center;
+    font-family: 'Gotham';
+    text-transform: uppercase;
+    color: #11749e;
+    letter-spacing: 21px;/*межбуквенное расстояние*/
+    font-size: 22px;
+    line-height: 75%;
+    padding-left: 21px;
+    margin-bottom: 119px;
+}
+
+.Scroll-down {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 75%;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.scrollbutton { 
+    margin-left: 567.5px;
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    border-radius: 50%;/*закругление углов*/
+    background-color: transparent;/*прозрачный фон*/
+    outline: 0;/*выделение кнопки,убирает края*/
+    border: 1px solid #ffffff;
+    cursor: pointer;/*курсор палец*/
+}
+
+.scrollbutton div {
+    background-image: url("../img/v.png");
+    width: 63px;
+    height: 63px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bluebox {
+    height: 738px;
+    background-color: #11749e;
+    color: #ffffff;
+    position: relative;/*Отталкиваемся от него для позиционирования*/
+}
+
+.bigw {
+    position: absolute;/*Позиционирование*/
+    top: 99px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255,255, 0.18);
+    font-size: 250px;
+    line-height: 75%;
+}
+
+.blue-title {
+    font-weight: 500;/*Толщина шрифта*/
+    text-align: center;
+    font-family: 'Gotham';
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 75%;
+    margin-bottom: 119px;
+    padding-top: 172px;
+    z-index: 1;
+    position: relative;
+}
+
+.blueflex {
+    display: flex;
+    padding: 0 17px;
+    justify-content: space-between;/*Отступы*/
+}
+
+.ensikard {
+    width: 260px;
+}
+
+.pallo {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;/*закругление углов*/
+    background:url(../img/kyna.png) no-repeat center #2e85aa;
+    margin: 0 auto 24px;
+
+}
+
+.luppa {
+    background-image:url(../img/luppa.png);
+}
+
+.chatis {
+    background-image:url(../img/chat.png);
+}
+
+.bigtextkard {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-weight: 500;/*Толщина шрифта*/
+    text-align: center;
+    line-height: 75%;
+    margin-bottom: 32px;
+}
+
+.small {
+    font-family: 'Gotham';
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.akitakuva {
+    display: flex;
+}
+
+.akita {
+    background-color: #222222;
+    font-family: 'Gotham';
+    color: #ffffff;
+    width: 50%;
+    height: 448px;
+}
+
+.akita p:first-child {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.akita p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.akita p:nth-child(3) {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.akita p:last-child {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.akita div {
+    width: 583px;
+    margin-left: auto;
+    padding:82px 113px 0 0;
+}
+
+.pkchel {
+    background:url(../img/pkchel.jpg) no-repeat #222222;
+    width: 50%;
+}
+
+.chelikpk {
+    background: url(../img/chelikpk.jpg) no-repeat right #f3f3f3;
+    width: 50%;
+}
+
+.akita2 {
+    background-color: #f3f3f3;
+    font-family: 'Gotham';
+    color: #222222;
+    width: 50%;
+    height: 448px;
+}
+
+.akita2 p:first-child {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.akita2 p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.akita2 p:nth-child(3) {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.akita2 p:last-child {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.akita2 div {
+    width: 583px;
+    padding:82px 0 0 113px;
+}
+
+#whitebox {
+    height: 1017px;
+    background-color: #ffffff;
+    color: #222222;
+    position: relative;/*Отталкиваемся от него для позиционирования*/
+}
+
+#whitebox .bigw {
+    color: rgba(34, 34, 34, 0.18);
+}
+
+#whitebox .container > p:nth-child(3) {
+    font-family: 'Gotham';
+    font-size: 30px;
+    text-align: center;
+    line-height: 75%;
+    margin-bottom: 80px;
+}
+
+#whitebox .ensikard {
+    width: 270px;
+}
+
+.blogimage {
+    background: url(../img/blogimage.jpg);
+    height: 280px;
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.mies {
+    background: url(../img/mies.jpg);
+}
+
+.klava {
+    background: url(../img/klava.jpg);
+}
+
+#whitebox .bigtextkard {
+    color: #11749e;
+}
+
+.pienisin {
+    height: 355px;
+    background-color:#11749e;
+}
+
+.pikuva {
+    background: url(../img/pikuva.png);
+    height: 69px;
+    width: 69px;
+    margin-right: 35px;
+}
+
+.matr {
+    display: flex;
+    padding: 113px 13px 0 13px;
+}
+
+.matrcont {
+   width: 50%; 
+   display: flex;
+}
+
+.matr p {
+    font-family: 'Gotham';
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+    width: 450px;
+}
+
+.Psdfree {
+    background: url(../img/psd.jpg) no-repeat;
+    height: 848px;
+    background-size: cover;
+}
+
+.Psdcontent {
+    display: flex;
+}
+
+.Psdtext {
+    font-family: 'Gotham';
+    font-weight: 500;
+    color: #ffffff;
+    width: 470px;
+    margin: 228px 253px 0 25px;
+}
+
+.Psdtext p:first-child {
+    font-size: 25px;
+    line-height: 75%;
+    margin-bottom: 42px;
+}
+
+.Psdtext p:nth-child(2) {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 68px;
+}
+
+.Psdtext p:not(:nth-child(2)) {
+    text-transform: uppercase;
+}
+
+.Psdtext p:nth-child(n+3) {
+    line-height: 38px;
+    background-color: #11749e;
+    margin-bottom: 24px;
+    width: 370px;
+    padding-left: 19px;
+}
+
+.Psdtext p:nth-child(4) {
+    width: 400px;
+}
+
+.Psdtext p:nth-child(5) {
+   width: 428px; 
+}
+
+.mobile {
+    background: url(../img/Puhelin.png);
+    height: 651px;
+    width: 316px;
+    margin-top: 99px;
+}
+
+#whitebox2 {
+    height: 945px;
+    background-color: #ffffff;
+    color: #222222;
+    position: relative;/*Отталкиваемся от него для позиционирования*/
+}
+
+#whitebox2 .bigw {
+    color: rgba(34, 34, 34, 0.18);
+}
+
+#whitebox2 .container > p:nth-child(3) {
+    font-family: 'Gotham';
+    font-size: 30px;
+    text-align: center;
+    line-height: 75%;
+    margin-bottom: 74px;
+}
+
+#whitebox2 .ensikard {
+    width: 270px;
+}
+
+.ihmiset {
+    height: 416px;
+    width: 100%;
+    background: url(../img/Silmalaset.jpg);
+    font-family: 'Gotham';
+    color: #11749e;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;/*по вертикале*/
+    justify-content: center;/*по горизонту*/
+}
+
+.ihmiset p {
+    width: 216px;
+    height: 48px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 23px;
+    line-height: 75%;
+}
+
+.siga {
+    background: url(../img/Siga.jpg);
+}
+
+.partta {
+    background: url(../img/Partta.jpg);
+}
+
+.tytto {
+    background: url(../img/tytto.jpg);
+}
+
+#whitebox2 .small {
+    font-weight: 500;
+}
+
+.love {
+    height: 851px;
+    background: url(../img/love.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.love .bigw {
+    top: 144px;
+}
+
+.love .blue-title {
+    color: #ffffff;
+    padding-top: 224px;
+    margin-bottom: 151px;
+}
+
+.inputs {
+    display: flex;
+    margin-bottom: 39px;
+    justify-content: space-between;
+}
+
+input {
+    width: 370px;
+    height: 48px;
+    outline: 0; /*убрать обводку границ*/
+    border: 1px solid #ffffff;
+    background-color: transparent;/*прозрачный #00000000*/
+    padding: 0 21px;
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+:focus::-webkit-input-placeholder { /* WebKit browsers */
+    color:transparent;
+}
+
+:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:transparent;
+}
+
+:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:transparent;
+}
+
+:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:transparent;
+}
+
+textarea {
+    width: 100%;
+    height: 151px;
+    outline: 0; /*убрать обводку границ*/
+    border: 1px solid #ffffff;
+    background-color: transparent;/*прозрачный #00000000*/
+    padding: 17px 21px;
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 15px;
+    resize: none;/*Пользователь не может изменять размер*/
+    margin-bottom: 46px;
+}
+
+form {
+    padding: 0 18px;
+}
+
+.submit {
+    width: 227px;
+    height: 64px;
+    background-color: #11749e;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Gotham';
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: calc((100% - 227px) / 2);
+}
+
+.karta {
+    height: 332px;
+}
+
+iframe {
+    display: block;
+}
+
+footer {
+    background-color: #222222;
+    height: 114px;
+}
+
+.footer {
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    padding: 0 21px;
+    color: #ffffff;
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+    align-items: center;
+}
+
+.beetext {
+    display: flex;
+    align-items: center;
+}
+
+.bee {
+    background: url(../img/bee.png);
+    width: 32px;
+    height: 26px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .container {
+        width: 992px;
+    }
+
+    h1 {
+        font-size: 100px;/*Размер текста*/
+        margin-bottom: 30px;
+    }
+
+    .logo-link {
+        margin: 0px 29px 0 14px;
+    }
+
+    .social {
+        margin: 0 10px 0 35px;
+    }
+
+    .Power-com {
+        letter-spacing: 15px;/*межбуквенное расстояние*/
+        font-size: 15px;
+        padding-left: 15px;
+        margin-bottom: 90px;
+    }
+
+    .Scroll-down {
+        font-size: 9px;
+        line-height: 75%;
+        margin-bottom: 18px;
+    }
+
+    .scrollbutton { 
+        margin-left: 472px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+
+    .scrollbutton div {
+        width: 48px;
+        height: 48px;
+        background-size: 28.6% ;
+    }
+
+    .ensikard {
+        width: 260px;
+    }
+    
+    .pallo {
+        width: 125px;
+        height: 125px;
+        margin: 0 auto 24px;
+    }
+
+    .bigtextkard {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .small {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #bluebox  {
+        height: 630px;
+    }
+
+    .akita div {
+        padding: 82px 70px 0 28px;
+        width: 555px;
+    }
+
+    .pkchel {
+        background-position: right;
+    }
+
+    .chelikpk {
+        background-position: left;
+    }
+
+    .akita2 div {
+        width: 473px;
+        padding: 80px 0 0 21px;
+    }
+
+    #whitebox .ensikard {
+        width: 233px;
+    }
+
+    .matr p {
+        width: 365px;
+    }
+
+    .pikuva {
+        margin-right: 20px;
+    }
+
+    .Psdtext {
+        margin-right: 136px;
+    }
+
+    #whitebox2 .ensikard {
+        width: 233px;
+    }
+
+    input {
+        width: 312px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container {
+        width: 768px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .logo-link {
+        margin: 0 40px 0 5px;
+    }
+
+    ul {
+        width: 483px;
+    }
+
+    .social {
+        margin: 0 10px 0 29px;
+        width: 112px;
+    }
+
+    h1 {
+        font-size: 128px;
+        margin-bottom: 40px;
+    }
+
+    .Power-com {
+        letter-spacing: 30px;
+        font-size: 22px;
+        line-height: 130%;
+        margin-bottom: 119px;
+    }
+
+    .scrollbutton {
+        margin-left: 351.5px;
+    }
+
+    .ensikard {
+        width: 170px;
+    }
+
+    .akita div {
+        width: 477px;
+        margin-left: 20px;
+        padding: 48px 113px 0 0;
+    }
+
+    .pkchel {
+        background-position: right;
+    }
+    
+    .akita2 div {
+        width: 385px;
+        padding: 48px 0 0 21px;
+    }
+
+    #whitebox .container > p:nth-child(3) {
+        line-height: 110%;
+        margin-bottom: 40px;
+    }
+
+    #whitebox .ensikard {
+        width: 176px;
+    }
+
+    .bigtextkard {
+        line-height: 110%;
+        margin-bottom: 20px;
+    }
+
+    .small {
+        line-height: 23px;
+    }
+
+    .blogimage {
+        margin-bottom: 30px;
+    }
+
+    .matr p {
+        line-height: 24px;
+        width: 265px;
+    }
+
+    .matr {
+        padding: 91px 13px 0 13px;
+    }
+
+    .mobile {
+        height: 400px;
+        width: 194px;
+        margin-top: 240px;
+        background-size: cover;
+    }
+
+    .Psdtext {
+        margin: 228px 58px 0 25px;
+    }
+
+    .blueflex {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #whitebox2 {
+        height: 1336px;
+    }
+
+    #whitebox2 .ensikard {
+        margin-bottom: 20px;
+    }
+
+    #whitebox2 .container > p:nth-child(3) {
+        font-size: 28px;
+    }
+
+    .blue-title {
+        font-size: 30px;
+    }
+
+    input {
+        width: 238px;
+    }
+
+    .inputs {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .container {
+        width: 480px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .logo-link {
+        margin: 0 40px 0 5px;
+    }
+
+    ul {
+        width: 483px;
+    }
+
+    .social {
+        margin: 0 10px 0 29px;
+        width: 112px;
+    }
+
+    h1 {
+        font-size: 76px;
+        margin-bottom: 40px;
+    }
+
+    .Power-com {
+        letter-spacing: 16px;
+        font-size: 22px;
+        line-height: 130%;
+        margin-bottom: 119px;
+    }
+
+    .scrollbutton {
+        margin-left: calc((480px - 65px) / 2);
+    }
+
+    #bluebox {
+        height: 1100px;
+    }
+
+    .love .blue-title {
+        line-height: normal;
+        margin-bottom: 119px;
+        padding-top: 204px;
+        font-size: 30px;
+    }
+
+    .ensikard {
+        width: 170px;
+        margin-bottom: 40px;
+    }
+
+    .akitakuva {
+        flex-wrap: wrap;/*все что не влезло то переносит*/
+    }
+
+    .akita {
+        width: 100%;
+    }
+
+    .akita div {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+        padding: 48px 20px 0 0;
+    }
+
+    .pkchel {
+        background-position: right;
+        width: 100%;
+        height: 346px;
+    }
+
+    .chelikpk {
+        width: 100%;
+        height: 346px;
+        order: 1;
+    }
+
+    .akita2 {
+        width: 100%;
+    }
+    
+    .akita2 div {
+        width: 100%;
+        padding: 48px 20px 0 20px;
+    }
+
+    #whitebox .container > p:nth-child(3) {
+        line-height: 110%;
+        margin-bottom: 40px;
+    }
+
+    #whitebox .ensikard {
+        width: 176px;
+    }
+
+    .bigtextkard {
+        line-height: 110%;
+        margin-bottom: 20px;
+    }
+
+    .small {
+        line-height: 23px;
+    }
+
+    .blogimage {
+        margin-bottom: 30px;
+    }
+
+    .matrcont {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .matr p {
+        line-height: 24px;
+        width: 335px;
+    }
+
+    .matr {
+        padding: 20px 13px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile {
+        height: 400px;
+        width: 194px;
+        margin-top: 240px;
+        background-size: cover;
+    }
+
+    .Psdtext {
+        margin: 228px 58px 0 25px;
+    }
+
+    .blueflex {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #whitebox2 {
+        height: 2300px;
+    }
+
+    #whitebox2 .ensikard {
+        margin-bottom: 20px;
+    }
+
+    #whitebox2 .container > p:nth-child(3) {
+        font-size: 28px;
+        line-height: 115%;
+    }
+
+    #whitebox .blue-title{
+        padding-top: 170px;
+    }
+
+    .blue-title {
+        line-height: 100%;
+        padding-top: 150px;
+    }
+
+    input {
+        width: 443px;
+        margin-bottom: 15px;
+    }
+
+    .inputs {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    #whitebox {
+        height: 1660px;
+    }
+
+    .love {
+        height: 935px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .container {
+        width: 320px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .logo-link {
+        margin: 0 40px 0 5px;
+    }
+
+    .social {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: 0 auto;
+        width: 112px;
+    }
+
+    h1 {
+        font-size: 52px;
+        margin-bottom: 25px;
+    }
+
+    .Power-com {
+        letter-spacing: 12px;
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 50px;
+    }
+
+    .Scroll-down {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+
+    .scrollbutton {
+        margin-left: calc((320px - 50px) / 2);
+        width: 50px;
+        height: 50px;
+    }
+
+    .scrollbutton div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bigw {
+        font-size: 150px;
+        top: 70px;
+    }
+
+    .pallo {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 24px;
+    }
+
+    #bluebox {
+        height: 1420px;
+    }
+
+    .pienisin {
+        height: 590px;
+    }
+
+    .love .blue-title {
+        margin-bottom: 100px;
+        padding-top: 130px;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .ensikard {
+        width: 170px;
+        margin-bottom: 40px;
+    }
+
+    .akitakuva {
+        flex-wrap: wrap;/*все что не влезло то переносит*/
+    }
+
+    .akita {
+        width: 100%;
+    }
+
+    .akita div {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+        padding: 48px 20px 0 0;
+    }
+
+    .Psdtext p:nth-child(n+3) {
+        width: 270px;
+        line-height: 24px;
+    }
+
+    .Psdfree {
+        height: 600px;
+    }
+
+    .pkchel {
+        background-position: right;
+        width: 100%;
+        height: 346px;
+    }
+
+    .chelikpk {
+        width: 100%;
+        height: 346px;
+        order: 1;
+    }
+
+    .akita2 {
+        width: 100%;
+    }
+    
+    .akita2 div {
+        width: 100%;
+        padding: 48px 20px 0 20px;
+    }
+
+    #whitebox .container > p:nth-child(3) {
+        line-height: 110%;
+        margin-bottom: 40px;
+        font-size: 17px;
+    }
+
+    #whitebox .ensikard {
+        width: 176px;
+    }
+
+    .bigtextkard {
+        line-height: 110%;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .small {
+        line-height: 23px;
+        font-size: 11px;
+    }
+
+    .blogimage {
+        margin-bottom: 30px;
+    }
+
+    .matrcont {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .matr p {
+        line-height: 24px;
+        width: 177px;
+    }
+
+    .matr {
+        padding: 20px 13px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .Psdtext {
+        margin: 65px 25px 0 25px;
+    }
+
+    .blueflex {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #whitebox2 {
+        height: 2125px;
+    }
+
+    #whitebox2 .blue-title {
+        font-size: 17px;
+        padding-top: 118px;
+        margin-bottom: 75px;
+    }
+
+    #whitebox2 .ensikard {
+        margin-bottom: 20px;
+    }
+
+    #whitebox2 .container > p:nth-child(3) {
+        font-size: 20px;
+        line-height: 115%;
+        margin-bottom: 50px;
+    }
+
+    #whitebox .blue-title{
+        line-height: 100%;
+        padding-top: 116px;
+        font-size: 17px;
+        margin-bottom: 80px;
+    }
+
+    #bluebox .blue-title {
+        line-height: 100%;
+        padding-top: 113px;
+        font-size: 17px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+        height: 38px;
+    }
+
+    .inputs {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    #whitebox {
+        height: 2515px;
+    }
+
+    .love {
+        height: 760px;
+    }
+
+    .love .bigw {
+        top: 90px;
+    }
+
+    /* Стили для хедера*/
+
+    header {
+        height: 50px;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .logo {
+        width: calc(79px / 2);
+        height: calc(75px / 2);
+        background-size: cover;
+    }
+
+    header nav ul, header .social {
+        display: none;
+    }
+
+    #burger {
+        display: flex;
+        flex-direction: column; /*столбик*/
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        margin-right: 14px;
+    }
+
+    #burger div {
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+
+    #burger div:first-child {
+        transition: transform 0.4s; /*плавное изменение*/
+    }
+
+    #burger div:nth-child(2) {
+        transition: opacity 0.4s; /*прозрачность*/
+    }
+
+    #burger div:last-child {
+        transition: transform 0.4s;
+    }
+
+    #mobileMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background-color: #222222;
+    }
+
+    #mobileMenu ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobileMenu li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .mystyle {
+        display: block !important; /*выжнее*/
+    }
+
+    .mystyle2 div:first-child {
+        transform: rotate(45deg) translateX(6.25px) translateY(6.25px);
+    }
+
+    .mystyle2 div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mystyle2 div:last-child {
+        transform: rotate(-45deg) translateX(6.25px) translateY(-6.25px);
+    }
+
+
+}
